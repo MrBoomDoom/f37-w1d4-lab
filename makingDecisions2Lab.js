@@ -7,19 +7,21 @@ var arr = [10,20,30,40,50,60]
 */
 
 //Code Here
-
+let firstItem = [10]
 
 ////////// PROBLEM 2 //////////
 /*
-  Remove the last item from the 'arr' array and store it in a variable named 'lastItemRemoved'. Console.log the array to verify you no longer have the last item.
+  Remove the last item from the 'arr' array and store it in a variable named 'lastItemRemoved'. 
+  Console.log the array to verify you no longer have the last item.
 */
 
 //Code Here
-
+arr.pop()
+console.log(arr)
 ////////// PROBLEM 3 //////////
 
 // Do not edit the code below.
-var family = ['Tyler', 'Jordan', 'Ryan', 'Alice', 'Ireland'];
+let family = ['Tyler', 'Jordan', 'Ryan', 'Alice', 'Ireland'];
 // Do not edit the code above.
 
 /*
@@ -27,37 +29,55 @@ var family = ['Tyler', 'Jordan', 'Ryan', 'Alice', 'Ireland'];
 */
 
 //Code Here
-
+for (let i = 0; i < family.length; i++){
+  console.log(family[i])
+}
 
 
 ////////// PROBLEM 4 //////////
 
 // Do not edit the code below.
-var nums = [1,2,3,6,22,98,45,23,22,12];
+let nums = [1,2,3,6,22,98,45,23,22,12];
 let evensArr = []
 // Do not edit the code above.
 
 /*
-  Use a for-loop to iterate through each number in the 'nums' array, if the number is even, append it to the 'evensArr'.
+  Use a for-loop to iterate through each number in the 'nums' array, if the number is even, 
+  append it to the 'evensArr'.
 */
 
 //Code Here
-
+for (let i = 9; i < nums.length; i++){
+  // console.log(nums)
+}
+const evens = nums.filter((num) => num % 2 === 0)
+console.log(evens)
 
 
 ////////// PROBLEM 5 //////////
 
 // Do not edit the code below.
-var score = 74
+let score = 74
 // Do not edit the code above.
 
 /*
-  Determine if the letter grade of the given variable 'score'. If the variable is a 90 or above, console log an 'A', between 80 and 89, console log a 'B', between 70 and 79, 'C', between 60 and 69, 'D', and anything below 60 should console log an 'F'.
+  Determine if the letter grade of the given variable 'score'. If the variable is a 90 or above, 
+  console log an 'A', between 80 and 89, console log a 'B', between 70 and 79, 'C', between 
+  60 and 69, 'D', and anything below 60 should console log an 'F'.
 */
 
 //Code Here
-
-
+if (score >= 90) {
+    console.log('A')
+  } else if (score <= 89 && score >= 80) {
+    console.log('B')
+  } else if (score <= 79 && score >= 70) {
+    console.log('C')
+  } else if (score <= 69 && score >= 60) {
+    console.log('D')
+  } else if (score <= 59) {
+    console.log('F')
+  }
 ////////// Intermediate Problems //////////
 
 ////////// PROBLEM 6 //////////
@@ -67,31 +87,46 @@ var myFavoriteNumbers = [4,8,12,16,20,24];
 // Do not edit the code above.
 
 /*
-  Create a variable named 'someNum' and set it equal to the fifth value of the 'myFavoriteNumbers' array.
+  Create a variable named 'someNum' and set it equal to the fifth value of the 
+  'myFavoriteNumbers' array.
 */
 
 //Code Here
-
+let someNum = [28]
 
 ////////// PROBLEM 7 //////////
 
-// Subscripting (accessing values using their index) an array can fail. What happens if you subscript to the 7th element, but there are not 7 elements in the array? Let's write some code to check for that. 
-// Use an if statement to check the length of the 'myFavoriteNumbers' array. If it's less than 7, log 'There are not enough elements in this array' to the console. If the length is more than 7, reassign the value of 'someNum' to the value of the 7th element in the array. (Hint: how can you make sure that your code works for exactly 7 elements? What index do you use to get the 7th element?)
+// Subscripting (accessing values using their index) an array can fail. What happens if you 
+// subscript to the 7th element, but there are not 7 elements in the array? Let's write some 
+// code to check for that. Use an if statement to check the length of the 'myFavoriteNumbers' 
+// array. 
+//If it's less than 7, log 'There are not enough elements in this array' to the console. 
+// If the length is more than 7, reassign the value of 'someNum' to the value of the 7th element 
+// in the array. (Hint: how can you make sure that your code works for exactly 7 elements? What 
+// index do you use to get the 7th element?)
 
 //Code Here
-
-
+if (myFavoriteNumbers.length < 7){
+  console.log('There are not enough elements in the array')
+}
+myFavoriteNumbers.push('28')
+console.log(myFavoriteNumbers)
 ////////// PROBLEM 8 //////////
+
 
 // Do not edit the code below.
 var listOfNumbers = [1,2,3,4,5,6,7,8,9,10,11,12];
 // Do not edit the code above.
 
-// Use a for-loop to iterate through 'listOfNumbers', checking to see if each number is divisible by 3. If it is, console.log '{number} is divisible by 3.'
+// Use a for-loop to iterate through 'listOfNumbers', checking to see if each number is divisible by 3. If it is, 
+// console.log '{number} is divisible by 3.'
 
 //Code Here
-
-
+for (let i = 0; i < listOfNumbers.length; i++) {
+  if (listOfNumbers[i] % 3 === 0) {
+      console.log(`${listOfNumbers[i]} is divisible by 3.`)
+  }
+}
 ////////// PROBLEM 9 //////////
 // Do not edit the code below.
 var letters = ['A', 'B', 'C', 'D', 'E'];
@@ -102,7 +137,9 @@ var letters = ['A', 'B', 'C', 'D', 'E'];
 */
 
 //Code Here
-
+for (var i = letters.length - 1; i >= 0; i--) {
+  console.log(letters[i]);
+}
 
 ////////// Advanced Problems //////////
 
